@@ -1,26 +1,3 @@
-// const { Kafka } = require("kafkajs");
-
-// const kafka = new Kafka({
-//   clientId: "consumer-2",
-//   brokers: ["kafka:9092"],
-// });
-
-// const consumer = kafka.consumer({ groupId: "group-2" });
-
-// const connectConsumer = async () => {
-//   await consumer.connect();
-//   await consumer.subscribe({ topic: "event2", fromBeginning: true });
-//   console.log("Consumer 2 subscribed to topic: event2");
-
-//   await consumer.run({
-//     eachMessage: async ({ topic, partition, message }) => {
-//       console.log(`Consumer 2 received message: ${message.value.toString()} on topic ${topic}`);
-//     },
-//   });
-// };
-
-// module.exports = { connectConsumer };
-
 const { Kafka } = require("kafkajs");
 
 const kafka = new Kafka({
